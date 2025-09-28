@@ -1,6 +1,52 @@
 {
+  "name": "unireps-blog",
+  "version": "1.0.0",
+  "description": "UniReps Workshop Blog - A Jekyll-based academic blog with enhanced server functionality",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "NODE_ENV=development node server.js",
+    "build": "bundle exec jekyll build",
+    "serve": "bundle exec jekyll serve",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down",
+    "docker:logs": "docker compose logs -f",
+    "test": "echo \"No tests specified\" && exit 0",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "jekyll",
+    "blog",
+    "academic",
+    "unireps",
+    "workshop",
+    "server"
+  ],
+  "author": "UniReps Workshop Organizers",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6"
+  },
   "devDependencies": {
     "@shopify/prettier-plugin-liquid": "1.4.0",
     "prettier": "^3.1.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Piorosen/unireps.github.io.git"
+  },
+  "homepage": "https://unireps.org/blog/",
+  "bugs": {
+    "url": "https://github.com/Piorosen/unireps.github.io/issues"
+  },
+  "files": [
+    "_site/",
+    "server.js",
+    "package.json",
+    "README.md"
+  ]
 }
