@@ -1,0 +1,59 @@
+# Source files and development files
+_data/
+_includes/
+_layouts/
+_pages/
+_plugins/
+_posts/
+_sass/
+assets/
+bin/
+readme_preview/
+scripts/
+
+# Configuration files
+.devcontainer/
+.git*/
+.pre-commit-config.yaml
+.prettierignore
+.prettierrc
+_config.yml
+docker-compose*.yml
+Dockerfile
+Gemfile*
+purgecss.config.js
+requirements.txt
+
+# Documentation files  
+CONTRIBUTING.md
+CUSTOMIZE.md
+FAQ.md
+INSTALL.md
+LICENSE
+README.md
+README_SERVER.md
+
+# Generated/build files
+lighthouse_results/
+node_modules/
+.docker/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Test files
+test/
+tests/
+__tests__/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
